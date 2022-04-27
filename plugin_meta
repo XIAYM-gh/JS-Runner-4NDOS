@@ -1,0 +1,10 @@
+plugin.id=jsrunner
+plugin.name=JavaScript 扩展
+plugin.author=XIAYM
+plugin.commands=["js"]
+plugin.main-class=cn.xiaym.jse.main
+
+cmd.js.reg-name=js
+cmd.js.desc=运行 Javascript 脚本
+cmd.js.usage=js <文件名>
+cmd.js.tips=帮助参见: https://github.com/GitHub-Laziji/js-engine

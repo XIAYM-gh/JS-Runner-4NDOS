@@ -1,0 +1,4 @@
+*.sh
+/com
+/javax
+/jsrunner.jar
