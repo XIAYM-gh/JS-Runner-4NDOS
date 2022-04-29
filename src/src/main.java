@@ -24,7 +24,10 @@ public class main extends JavaPlugin {
 
       Path p = Paths.get(args.get(1));
 
-      if(!Files.exists(p)) return;
+      if(!Files.exists(p)) {
+        Logger.err("您指定的脚本文件不存在!");
+        return;
+      }
 
       List<String> list;
 
@@ -43,6 +46,7 @@ public class main extends JavaPlugin {
 
       Top.init();
       Top.addInternalModules("sys", new SystemModuleValue());
+
       try {
         Top.eval(merged);
         Top.loop();
